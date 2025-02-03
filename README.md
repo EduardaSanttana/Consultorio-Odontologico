@@ -10,9 +10,6 @@ Listagem e remoção: Exibe e permite a remoção de pacientes, dentistas e cons
 Cálculo de salário com comissão: O sistema calcula o salário dos dentistas com uma comissão baseada no número de consultas realizadas.
 Colaboradores
 
-## Instruções para Execução
-
-
 ## Autoras
 
 Este projeto foi desenvolvido por **Eduarda Santana** e **Luana Melissa Silveira**.
