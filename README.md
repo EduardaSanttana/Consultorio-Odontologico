@@ -8,7 +8,6 @@ Cadastro de dentistas: Permite o registro de dentistas com seus dados pessoais, 
 Agendamento de consultas: Marcação de consultas associando pacientes aos dentistas.
 Listagem e remoção: Exibe e permite a remoção de pacientes, dentistas e consultas.
 Cálculo de salário com comissão: O sistema calcula o salário dos dentistas com uma comissão baseada no número de consultas realizadas.
-Colaboradores
 
 ## Autoras
 
