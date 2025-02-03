@@ -1,7 +1,7 @@
 # Consultorio-Odontologico
 Projeto desenvolvido como parte da conclusão da matéria de Introdução à Programação Orientada a Objetos. O sistema foi projetado para gerenciar informações de pacientes, dentistas e consultas em um consultório odontológico.
 
-Funcionalidades
+*Funcionalidades*
 
 Cadastro de pacientes: Armazena informações como nome, telefone, data de nascimento e endereço.
 Cadastro de dentistas: Permite o registro de dentistas com seus dados pessoais, CRO e salário.
