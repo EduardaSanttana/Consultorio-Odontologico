@@ -11,4 +11,4 @@ Cálculo de salário com comissão: O sistema calcula o salário dos dentistas c
 
 ## Autoras
 
-Este projeto foi desenvolvido por **[Eduarda Santana](https://github.com/EduardaSanttana)** e **Luana Melissa Silveira**.
+Este projeto foi desenvolvido por **[Eduarda Santana](https://github.com/EduardaSanttana)** e [**Luana Melissa Silveira**](https://github.com/MelSilveira).
