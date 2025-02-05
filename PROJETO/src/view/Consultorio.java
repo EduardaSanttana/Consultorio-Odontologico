@@ -128,6 +128,7 @@ public class Consultorio {
         }
         int pacienteIndex = entrada.nextInt();
         entrada.nextLine();
+    
         System.out.println("Selecione um dentista:");
         for (int i = 0; i < dentistas.size(); i++) {
             System.out.println(i + " - " + dentistas.get(i).getNome());
@@ -143,11 +144,15 @@ public class Consultorio {
         double valorConsulta = entrada.nextDouble();
         entrada.nextLine();
     
-        Consulta consulta = new Consulta(dentistas.get(dentistaIndex), pacientes.get(pacienteIndex), dataHora, descricao, valorConsulta);
+        Dentista dentista = dentistas.get(dentistaIndex);
+        dentista.adicionarComissao(valorConsulta);
+    
+        Consulta consulta = new Consulta(dentista, pacientes.get(pacienteIndex), dataHora, descricao, valorConsulta);
         consultas.add(consulta);
     
         System.out.println("Consulta marcada com sucesso!");
     }
+    
     
 
     private static void listarPacientes() {
@@ -156,7 +161,8 @@ public class Consultorio {
         } else {
             System.out.println("--- Pacientes Cadastrados ---");
             for (Paciente p : pacientes) {
-                System.out.println("Nome: " + p.getNome() + ", Telefone: " + p.getTelefone());
+                System.out.println("\nNome: " + p.getNome() + 
+                                   "\nTelefone: " + p.getTelefone());
             }
         }
     }
@@ -167,21 +173,29 @@ public class Consultorio {
         } else {
             System.out.println("--- Dentistas Cadastrados ---");
             for (Dentista d : dentistas) {
-                System.out.println("Nome: " + d.getNome() + ", CRO: " + d.getCro());
+                double salario = d.getSalario();
+                double salarioComissao = d.calculoSalario(); 
+    
+                System.out.println("Nome: " + d.getNome() +
+                                   "\nCRO: " + d.getCro() +
+                                   "\nSalário: R$ " + String.format("%.2f", salario) +
+                                   "\nSalário com Comissão: R$ " + String.format("%.2f", salarioComissao));
             }
         }
     }
-
+    
+    
+    
     private static void listarConsultas() {
         if (consultas.isEmpty()) {
             System.out.println("Nenhuma consulta marcada.");
         } else {
             System.out.println("--- Consultas Marcadas ---");
             for (Consulta c : consultas) {
-                System.out.println("Paciente: " + c.getPaciente().getNome() + 
-                                   ", Dentista: " + c.getDentista().getNome() +
-                                   ", Data/Hora: " + c.getDataHora() +
-                                   ", Descrição: " + c.getDesc());
+                System.out.println("\nPaciente: " + c.getPaciente().getNome() + 
+                                   "\nDentista: " + c.getDentista().getNome() +
+                                   "\nData/Hora: " + c.getDataHora() +
+                                   "\nDescrição: " + c.getDesc());
             }
         }
     }
