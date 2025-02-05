@@ -1,18 +1,14 @@
-## Getting Started
+# Consultorio-Odontologico
+Projeto desenvolvido como parte da conclusão da matéria de Introdução à Programação Orientada a Objetos. O sistema foi projetado para gerenciar informações de pacientes, dentistas e consultas em um consultório odontológico.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Funcionalidades
 
-## Folder Structure
+Cadastro de pacientes: Armazena informações como nome, telefone, data de nascimento e endereço.
+Cadastro de dentistas: Permite o registro de dentistas com seus dados pessoais, CRO e salário.
+Agendamento de consultas: Marcação de consultas associando pacientes aos dentistas.
+Listagem e remoção: Exibe e permite a remoção de pacientes, dentistas e consultas.
+Cálculo de salário com comissão: O sistema calcula o salário dos dentistas com uma comissão baseada no número de consultas realizadas.
 
-The workspace contains two folders by default, where:
+## Autoras
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Este projeto foi desenvolvido por **[Eduarda Santana](https://github.com/EduardaSanttana)** e [**Luana Melissa Silveira**](https://github.com/MelSilveira).
